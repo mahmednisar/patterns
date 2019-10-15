@@ -1,11 +1,155 @@
 [
   
     {
-      "title"    : "What is version control?",
+      "title"    : "Star Pattern 3",
       "category" : "",
-      "tags"     : "Version Control",
-      "url"      : "/concept/what-is-version-control",
-      "date"     : "2016-02-09 00:00:00 +0530"
+      "tags"     : "Star Pattern",
+      "url"      : "/concept/Star-pattern3",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Star Pattern 2",
+      "category" : "",
+      "tags"     : "Star Pattern",
+      "url"      : "/concept/Star-pattern2",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Star Pattern 1",
+      "category" : "",
+      "tags"     : "Star Pattern",
+      "url"      : "/concept/Star-pattern1",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 9",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern9",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 8",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern8",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 7",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern7",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 6",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern6",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 5",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern5",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 4",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern4",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 3",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern3",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 2",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern2",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 14",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern14",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 13",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern13",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 12",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern12",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 11",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern11",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 10",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern10",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Number Pattern 1",
+      "category" : "",
+      "tags"     : "Number Pattern",
+      "url"      : "/concept/Number-pattern1",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Mixed Pattern 1",
+      "category" : "",
+      "tags"     : "Mixed Pattern",
+      "url"      : "/concept/Mixed-pattern1",
+      "date"     : "2019-10-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Alphabet Pattern 1",
+      "category" : "",
+      "tags"     : "Alphabet Pattern",
+      "url"      : "/concept/Alphabet-pattern1",
+      "date"     : "2019-10-01 00:00:00 +0530"
     } 
   
 ]

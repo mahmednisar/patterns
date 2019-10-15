@@ -86,20 +86,71 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1><b>Number Pattern 4</b></h1>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="/assets/image/patterns.png" alt="Programming Patterns Logic" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
-    </div>
+<p class="article-metadata text-muted">
+  01 October 2019 -  
+  <b>
+  
+  
+    less than 1 min read time
+  
+  </b>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Nisar Ahmed</p>
+  <br>
 
-  </div>
+  
+    Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/articles/tags#number-pattern">
+      <span class="tag badge badge-pill text-primary border border-primary">Number Pattern</span>
+    </a>
+    
+  
+
+</p>
+
+<h2 id="pattern-1">Pattern 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>12345
+1234
+123
+12
+1
+
+1
+12
+123
+1234
+12345
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main(void) {
+    int n = 5;
+    int i, j;
+    for (i = n; i &gt;= 0; i--) {
+        for (j = 1; j &lt;= i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
+ 
+    for (i = 1; i &lt;= n; i++) {
+        for (j = 1; j &lt;= i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
+    printf("\n");
+}
+ 
+</code></pre></div></div>
+
+
+
 </div>
   </main>
 

@@ -54,13 +54,25 @@
       
         
           
-            <a class="nav-item nav-link  active " href=" /concepts/ ">Concept</a>
+            <a class="nav-item nav-link " href=" /articles/ ">Patterns</a>
           
         
       
         
           
             <a class="nav-item nav-link " href=" /other_links/ ">Other Links</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
           
         
       
@@ -74,84 +86,63 @@
   </div>
 
 </nav>
-  <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1><b>Number Pattern 11</b></h1>
 
-<div class="input-group mt-5 px-3">
-  <input id="search-input" type="text" class="form-control search-box" placeholder="Search articles..">
-  <div class="input-group-append">
-    <span class="input-group-text border border-primary bg-primary text-white">
-      <i class="fas fa-search"></i>
-    </span>
-  </div>
-  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/articles/tags';">
-    <i class="fas fa-tags"></i>
-  </button>
-</div>
-<ul class="px-3" id="results-container"></ul>
+<p class="article-metadata text-muted">
+  01 October 2019 -  
+  <b>
+  
+  
+    less than 1 min read time
+  
+  </b>
 
-<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-<script>
-  var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
-        noResultsText: '<li class="list-group-item">No results found</li>',
-        json: '/search.json'
-      })
-</script>
-<div class="card-group mt-2">
+  <br>
 
   
-
+    Tags: 
     
+    <a class="text-decoration-none no-underline" href="/articles/tags#number-pattern">
+      <span class="tag badge badge-pill text-primary border border-primary">Number Pattern</span>
+    </a>
     
-    
-    
-    
-    
-    
-
-    
-    
-
-    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-      <a href="/concept/what-is-version-control" class="article card bg-secondary">
-        <div class="card-body text-white">
-          <h3 class="card-title">What is version control?</h3>
-          <p class="card-text">
-            
-              <span class="badge badge-light text-secondary">Version Control</span>
-            
-          </p>
-          <p class="card-text">
-            
-              Benefits of version control and version control systems.
-            
-          </p>
-        </div>
-        <div class="card-footer text-white">
-          09 February 2016
-        </div>
-      </a>
-    </div>
-
   
 
-  <!-- Pagination links -->
-	<div class="mx-auto my-3">
+</p>
 
-		
-			<span class="badge badge-light text-muted"><</span>
-		
+<h2 id="pattern-11">Pattern 11</h2>
 
-		<small class="mx-2"> Page <b>1</b> of 1 </small>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    1 
+   1 2 
+  1 2 3 
+ 1 2 3 4 
+1 2 3 4 5 
 
-		
-			<span class="badge badge-light text-muted">></span>
-		
+</code></pre></div></div>
 
-  </div>
-  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+ 
+int main ()
+{
+int n= 5;
+        
+        for (int i = 1; i &lt;= n; i++) {
+            for (int j = 1; j &lt;= n - i; j++) {
+                printf(" ");
+            }
+            for (int k = 1; k &lt;= i; k++) {
+                printf("%d", k);
+                printf(" ");
+            }
+            printf("\n");
+        }
+  return 0;
+}
+</code></pre></div></div>
+
+
+
 </div>
   </main>
 

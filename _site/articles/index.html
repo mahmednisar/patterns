@@ -54,13 +54,13 @@
       
         
           
-            <a class="nav-item nav-link " href=" /articles/ ">Patterns</a>
+            <a class="nav-item nav-link  active " href=" /articles/ ">Patterns</a>
           
         
       
         
           
-            <a class="nav-item nav-link  active " href=" /other_links/ ">Other Links</a>
+            <a class="nav-item nav-link " href=" /other_links/ ">Other Links</a>
           
         
       
@@ -86,16 +86,37 @@
   </div>
 
 </nav>
-  <!-- Remote Projects JS -->
-<script src="/assets/js/remote-projects.js"></script>
+  <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-<div class="card-columns m-3 mt-5">
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search articles..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/articles/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
 
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item">No results found</li>',
+        json: '/search.json'
+      })
+</script>
+<div class="card-group mt-2">
 
-  <!-- Local Projects -->
   
 
-  
+    
+    
     
     
     
@@ -103,30 +124,33 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://pw.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="programmers-wiki-img" class="card-img-top" src="/assets/links/programmerwiki.png" alt="Programmers Wiki" />
-    
-    <div class="card-body">
-      <h5 id="programmers-wiki-name" class="card-title">
-          
-        Programmers Wiki
-      </h5>
-      <p id="programmers-wiki-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="programmers-wiki-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">Programmers Wiki</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Star-pattern3" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Star Pattern 3</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Star Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Star Pattern 3
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-  
+    
+    
     
     
     
@@ -134,36 +158,33 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://ds.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="data-structures-img" class="card-img-top" src="/assets/links/Data-Structures.jpg" alt="Data Structures" />
-    
-    <div class="card-body">
-      <h5 id="data-structures-name" class="card-title">
-          
-        Data Structures
-      </h5>
-      <p id="data-structures-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="data-structures-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">C</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">C++</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Java</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Python</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Star-pattern2" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Star Pattern 2</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Star Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Star Pattern 2
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-  
+    
+    
     
     
     
@@ -171,36 +192,33 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://patterns.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="programming-patterns-img" class="card-img-top" src="/assets/links/patterns.png" alt="Programming Patterns" />
-    
-    <div class="card-body">
-      <h5 id="programming-patterns-name" class="card-title">
-          
-        Programming Patterns
-      </h5>
-      <p id="programming-patterns-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="programming-patterns-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">C</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">C++</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Java</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Python</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Star-pattern1" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Star Pattern 1</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Star Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Star Pattern 1
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-  
+    
+    
     
     
     
@@ -208,36 +226,33 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://code.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="programming-concepts-img" class="card-img-top" src="/assets/links/programmingconcepts.jpg" alt="Programming Concepts" />
-    
-    <div class="card-body">
-      <h5 id="programming-concepts-name" class="card-title">
-          
-        Programming Concepts
-      </h5>
-      <p id="programming-concepts-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="programming-concepts-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">C</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">C++</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Java</span>
-        
-        <span class="badge badge-pill text-primary border border-primary">Python</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Number-pattern9" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Number Pattern 9</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Number Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Number Pattern 9
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-  
+    
+    
     
     
     
@@ -245,30 +260,33 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://hackerrank.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="hackerrank-solutions-img" class="card-img-top" src="/assets/links/hackerrank.png" alt="Hackerrank Solutions" />
-    
-    <div class="card-body">
-      <h5 id="hackerrank-solutions-name" class="card-title">
-          
-        Hackerrank Solutions
-      </h5>
-      <p id="hackerrank-solutions-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="hackerrank-solutions-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">Programming Logics</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Number-pattern8" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Number Pattern 8</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Number Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Number Pattern 8
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-  
+    
+    
     
     
     
@@ -276,31 +294,47 @@
     
 
     
+    
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://aptitude.nisarahmed.me/" class="project card text-dark">
-    
-    <img id="aptitude-logic-img" class="card-img-top" src="/assets/links/aptitude.jpeg" alt="Aptitude Logic" />
-    
-    <div class="card-body">
-      <h5 id="aptitude-logic-name" class="card-title">
-          
-        Aptitude Logic
-      </h5>
-      <p id="aptitude-logic-desc" class="card-text">Some useful websites for programmers.<br />When learning CS, there are some useful sites you must know to get always informed in order to do your technologies even better and learn new things. Here is a non exhaustive list of some sites you should visit.</p>
-      <p id="aptitude-logic-tools" class="card-text">
-        
-        <span class="badge badge-pill text-primary border border-primary">Mathematics</span>
-        
-      </p>
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Number-pattern7" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Number Pattern 7</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Number Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Number Pattern 7
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
   
 
-</div>
+  <!-- Pagination links -->
+	<div class="mx-auto my-3">
 
+		
+			<span class="badge badge-light text-muted"><</span>
+		
+
+		<small class="mx-2"> Page <b>1</b> of 4 </small>
+
+		
+			<a href="/articles/page-2/" class="badge badge-primary">></a>
+		
+
+  </div>
+  
+</div>
   </main>
 
   <footer class="mt-auto py-3 text-center">

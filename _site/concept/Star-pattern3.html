@@ -86,20 +86,132 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1><b>Star Pattern 3</b></h1>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="/assets/image/patterns.png" alt="Programming Patterns Logic" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
-    </div>
+<p class="article-metadata text-muted">
+  01 October 2019 -  
+  <b>
+  
+  
+    less than 1 min read time
+  
+  </b>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Nisar Ahmed</p>
+  <br>
 
-  </div>
+  
+    Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/articles/tags#star-pattern">
+      <span class="tag badge badge-pill text-primary border border-primary">Star Pattern</span>
+    </a>
+    
+  
+
+</p>
+
+<h6 id="c-program-to-print-heart-star-pattern-with-center-name">C program to print heart star pattern with center name</h6>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ****     ****
+ ******   ******
+******** ********
+******Nisar*****
+ ***************
+  *************
+   ***********
+    *********
+     *******
+      *****
+       ***
+        *
+
+</code></pre></div></div>
+
+<p>```</p>
+
+<p>#include <stdio.h>
+#include <string.h></string.h></stdio.h></p>
+
+<p>int main()
+{
+    int i, j, n;
+    char name[50];
+    int len;</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>printf("Enter your name: ");
+gets(name);
+ 
+printf("Enter value of n : ");
+scanf("%d", &amp;n);
+
+len = strlen(name);
+
+// Print upper part of the heart shape
+for(i=n/2; i&lt;=n; i+=2)
+{
+    for(j=1; j&lt;n-i; j+=2)
+    {
+        printf(" ");
+    }
+ 
+    for(j=1; j&lt;=i; j++)
+    {
+        printf("*");
+    }
+ 
+    for(j=1; j&lt;=n-i; j++)
+    {
+        printf(" ");
+    }
+ 
+    for(j=1; j&lt;=i; j++)
+    {
+        printf("*");
+    }
+ 
+    printf("\n");
+}
+ 
+// Prints lower triangular part of the pattern
+for(i=n; i&gt;=1; i--)
+{
+    for(j=i; j&lt;n; j++)
+    {
+        printf(" ");
+    }
+    
+    // Print the name
+    if(i == n) 
+    {
+        for(j=1; j&lt;=(n * 2-len)/2; j++)
+        {
+            printf("*");
+        }   
+
+        printf("%s", name);
+
+        for(j=1; j&lt;(n*2-len)/2; j++)
+        {
+            printf("*");
+        }
+    }
+    else 
+    {
+        for(j=1; j&lt;=(i*2)-1; j++)
+        {
+            printf("*");
+        }
+    }
+ 
+    printf("\n");
+}
+ 
+return 0; }
+</code></pre></div></div>
+
+
+
 </div>
   </main>
 

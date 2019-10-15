@@ -54,7 +54,7 @@
       
         
           
-            <a class="nav-item nav-link " href=" /articles/ ">Patterns</a>
+            <a class="nav-item nav-link  active " href=" /articles/ ">Patterns</a>
           
         
       
@@ -86,20 +86,84 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="/assets/image/patterns.png" alt="Programming Patterns Logic" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search articles..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/articles/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item">No results found</li>',
+        json: '/search.json'
+      })
+</script>
+<div class="card-group mt-2">
+
+  
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="/concept/Alphabet-pattern1" class="article card bg-secondary">
+        <div class="card-body text-white">
+          <h3 class="card-title">Alphabet Pattern 1</h3>
+          <p class="card-text">
+            
+              <span class="badge badge-light text-secondary">Alphabet Pattern</span>
+            
+          </p>
+          <p class="card-text">
+            
+              Alphabet Pattern 1
+            
+          </p>
+        </div>
+        <div class="card-footer text-white">
+          01 October 2019
+        </div>
+      </a>
     </div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Nisar Ahmed</p>
+  
+
+  <!-- Pagination links -->
+	<div class="mx-auto my-3">
+
+		
+			<a href="/articles/page-3/" class="badge badge-primary"><</a>
+		
+
+		<small class="mx-2"> Page <b>4</b> of 4 </small>
+
+		
+			<span class="badge badge-light text-muted">></span>
+		
 
   </div>
+  
 </div>
   </main>
 

@@ -1,6 +1,6 @@
 ---
 title: Star Pattern 1
-tags: [Number Pattern ]
+tags: [Star Pattern ]
 style: fill
 color: secondary
 description: Star Pattern 1

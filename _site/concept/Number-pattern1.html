@@ -54,13 +54,25 @@
       
         
           
-            <a class="nav-item nav-link " href=" /concepts/ ">Concept</a>
+            <a class="nav-item nav-link " href=" /articles/ ">Patterns</a>
           
         
       
         
           
             <a class="nav-item nav-link " href=" /other_links/ ">Other Links</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
           
         
       
@@ -75,27 +87,81 @@
 
 </nav>
   <div class="col-lg-10 mx-auto mt-5 article">
-  <!-- Collect tags from all posts -->
+  <h1><b>Number Pattern 1</b></h1>
 
-
-
-
-<!-- List tags & related posts -->
-
-<div class="py-3">
-  <h4 id="version-control">Version Control</h4>
-  <ol>
+<p class="article-metadata text-muted">
+  01 October 2019 -  
+  <b>
   
+  
+    less than 1 min read time
+  
+  </b>
+
+  <br>
+
+  
+    Tags: 
     
-      
-    <a href="/concept/what-is-version-control"><li>What is version control?</li></a>
-    <small class="text-muted"> - 09 February 2016</small>
-    <br/>
+    <a class="text-decoration-none no-underline" href="/articles/tags#number-pattern">
+      <span class="tag badge badge-pill text-primary border border-primary">Number Pattern</span>
+    </a>
     
   
-  </ol>
-</div>
-<hr class="bg-light">
+
+</p>
+
+<h2 id="pattern-1">Pattern 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        1
+       121
+      12321
+     1234321
+    123454321
+   12345654321
+  1234567654321
+ 123456787654321
+12345678987654321
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main(void) {
+    int num, space, i, j, k;
+ 
+    printf("Enter a number between 1 to 9 : \n");
+ 
+    scanf("%d", &amp;num);
+ 
+    space = num - 1;
+ 
+    for (i = 1; i &lt;= num; i++) {
+        for (space = 1; space &lt;= (num - i); space++) {
+            printf(" ");
+        }
+ 
+        for (j = 1; j &lt;= i; j++) {
+            printf("%d", j);
+        }
+ 
+        for (k = (i - 1); k &gt;= 1; k--) {
+            printf("%d",k);
+        }
+ 
+        printf("\n");
+ 
+    }
+ 
+}
+ 
+
+
+</code></pre></div></div>
+
+
 
 </div>
   </main>

@@ -86,20 +86,94 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1><b>Number Pattern 8</b></h1>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="/assets/image/patterns.png" alt="Programming Patterns Logic" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
-    </div>
+<p class="article-metadata text-muted">
+  01 October 2019 -  
+  <b>
+  
+  
+    less than 1 min read time
+  
+  </b>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Nisar Ahmed</p>
+  <br>
 
-  </div>
+  
+    Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/articles/tags#number-pattern">
+      <span class="tag badge badge-pill text-primary border border-primary">Number Pattern</span>
+    </a>
+    
+  
+
+</p>
+
+<h2 id="pattern-8">Pattern 8</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1
+  212
+ 32123
+4321234
+ 32123
+  212
+   1
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    for (int i = 1; i &lt;= 4; i++)
+        {
+            int n = 4;
+ 
+            for (int j = 1; j &lt;= n - i; j++)
+            {
+                printf(" ");
+            }
+            for (int k = i; k &gt;= 1; k--)
+            {
+                printf("%d", k);
+            }
+            for (int l = 2; l &lt;= i; l++)
+            {
+                printf("%d", l);
+            }
+ 
+            printf("\n");
+        }
+ 
+        for (int i = 3; i &gt;= 1; i--)
+        {
+            int n = 3;
+ 
+            for (int j = 0; j &lt;= n - i; j++)
+            {
+                printf(" ");
+            }
+            for (int k = i; k &gt;= 1; k--)
+            {
+                printf("%d", k);
+            }
+            for (int l = 2; l &lt;= i; l++)
+            {
+                printf("%d", l);
+            }
+ 
+            printf("\n");
+        }
+     
+    return 0;
+}
+</code></pre></div></div>
+
+
+
 </div>
   </main>
 
